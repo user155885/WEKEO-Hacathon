@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Mali', cursive;
+  /* font-family: 'Ubuntu', sans-serif; */
+
+  /* font properties */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: black;
+}
+
+*,
+*:before,
+*:active {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.animationBlock {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+}
+
+.sectiondiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* transition logic */
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container_text {
+  margin-bottom: 20px;
+}
+
+.container_button {
+  margin: 55px 0;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+
+  /* dimenstions of button */
+  padding: 14px 48px;
+
+  background-color: #4BAF47;
+  border-radius: 7px
+}
+
+.button:hover {
+  border: 1px solid #4BAF47;
+  background-color: inherit;
+  color: #4B9847;
+  transition: 0.2s;
+}
