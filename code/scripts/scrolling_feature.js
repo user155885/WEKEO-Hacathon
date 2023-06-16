@@ -1,14 +1,7 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-});
+let moduleNumber = 1;
 
-
-const hiddenElements = document.querySelectorAll("div[class='sectiondiv hidden']");
-hiddenElements.forEach((el) => observer.observe(el));
+function animationOnExit() {
+  document.getElementById("module" + moduleNumber).className = 'container animationOnExit';
+  moduleNumber += 1;
+  document.getElementById("module" + moduleNumber).className += ' animationOnStart';
+}

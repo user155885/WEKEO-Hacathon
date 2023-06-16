@@ -10,7 +10,7 @@ body {
   /* font-family: 'Ubuntu', sans-serif; */
 
   /* font properties */
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.6;
   color: black;
@@ -24,36 +24,82 @@ body {
 }
 
 @keyframes transitionIn {
-    from {
-      opacity: 0;
-      transform: rotateX(-10deg);
-    }
-    to {
-      opacity: 1;
-      transform: rotateX(0);
-    }
+  from {
+
+  }
+
+  to {
+    z-index: 0;
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
 }
 
 @keyframes slideInLeft {
   from {
+    z-index: 0;
     opacity: 0;
     transform: translateX(-200px);
   }
 
   to {
+    z-index: 1;
     opacity: 1;
     transform: translateX(0);
   }
 }
 
+@keyframes slideInRight {
+  from {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-.animationBlock {
-  animation-name: slideInLeft;
-  animation-duration: 1s;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards;
+  to {
+    z-index: 0;
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
 
+.hidden {
   opacity: 0;
+}
+
+.animationOnFirst {
+  opacity: 0;
+
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animationOnStart {
+  opacity: 0;
+
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+
+.animationOnExit {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+/* transition logic */
+.hidden {
+  opacity: 0;
+  z-index: -100;
+}
+
+.show {
+  opacity: 1;
+  z-index: inherit;
 }
 
 .sectiondiv {
@@ -62,22 +108,16 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-}
 
-/* transition logic */
-.hidden {
-  opacity: 0;
-  transition: all 2s;
-}
-
-.show {
-  opacity: 1;
+  position: relative;
 }
 
 .container {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+
+  position: absolute;
+  left: 30%;
 }
 
 .container_text {
@@ -89,12 +129,13 @@ body {
 }
 
 .button {
-  text-decoration: none;
+  font-family: inherit;
   font-size: 25px;
   color: white;
 
   /* dimenstions of button */
-  padding: 14px 48px;
+  border: 1px solid transparent;
+  padding: 17px 63px;
 
   background-color: #4BAF47;
   border-radius: 7px
@@ -105,4 +146,12 @@ body {
   background-color: inherit;
   color: #4B9847;
   transition: 0.2s;
+}
+
+.button_link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
 }

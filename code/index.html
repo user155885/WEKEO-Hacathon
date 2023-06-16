@@ -5,12 +5,12 @@
     <title>Innovative Education - Educational Ecology Course for Children</title>
     <link rel="stylesheet" href="assets/style.css">
 
-    <script defer scr="scripts/scrolling_feature.js"></script>
+    <script defer src="scripts/scrolling_feature.js"></script>
   </head>
 
-  <body class = "animationBlock">
+  <body>
     <div class="sectiondiv">
-      <div class="container">
+      <div class="container animationOnFirst" id = "module1">
         <div class="container_text">
           Are you interested in ecology? <br>
           Do you know that every year almost 30 thousand living species dissapear from the Earth? <br>
@@ -19,33 +19,36 @@
           Join us to learn more about ecology!
         </div>
         <div class="container_button">
-          <a href="#page2" class="button">Join</a>
+          <button onclick="animationOnExit()" class="button">
+            <a href="#page2" class = "button_link">Join</a>
+          </button>
         </div>
       </div>
-    </div>
 
-    <div class="sectiondiv" id = "page2">
-      <div class="container">
+      <div class="container hidden" id = "module2">
         <div class="container_text">
           Our course is divided into several modules which will introduce you to the ways you can help your country. <br>
           We will learn how you can take care of animals, rescue a local area from clogging and save energy resources. <br>
           Let's get down to the first module!
         </div>
         <div class="container_button">
-          <a href="#page3" class="button">Begin with the first module </a>
+          <button onclick="animationOnExit()" class="button">
+            <a href="#page2" class = "button_link">Begin with the first module</a>
+          </button>
         </div>
       </div>
-    </div>
 
-    <div class="sectiondiv" id = "page3">
-      <div class="container">
+      <div class="container hidden" id = "module3">
         <div class="container_text">
-          Our course is divided into several modules which will introduce you to the ways you can help your country. <br>
-          We will learn how you can take care of animals, rescue a local area from clogging and save energy resources. <br>
-          Let's get down to the first module!
+          Garbage Pollution
+        </div>
+        <div class="container_video">
+          *video
         </div>
         <div class="container_button">
-          <a href="#" class="button">Begin with the first module </a>
+          <button onclick="animationOnExit()" type="button" name="button" class="button">
+            <a href="#page2" class = "button_link">Next</a>
+          </button>
         </div>
       </div>
     </div>
