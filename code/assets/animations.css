@@ -1,48 +1,33 @@
-
-@keyframes transitionIn {
+@keyframes slideInRight {
   from {
-
+    opacity: 0;
+    z-index: -1;
+    transform: translateX(-200px);
   }
 
   to {
-    z-index: 0;
-    opacity: 0;
-    transform: rotateX(-10deg);
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes slideInLeft {
   from {
-    z-index: 0;
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-
-  to {
-    z-index: 1;
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
     z-index: 1;
     opacity: 1;
     transform: translateX(0);
   }
 
   to {
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
     transform: translateX(-200px);
   }
 }
 
 .animationOnFirst {
-  opacity: 0;
-
-  animation-name: slideInLeft;
+  animation-name: slideInRight;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
@@ -50,15 +35,31 @@
 .animationOnStart {
   opacity: 0;
 
-  animation-name: slideInLeft;
+  animation-name: slideInRight;
   animation-duration: 1s;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
 .animationOnExit {
-  animation-name: slideInRight;
+  animation-name: slideInLeft;
   animation-duration: 1s;
-  animation-delay: 0.2s;
   animation-fill-mode: forwards;
+}
+
+
+.ghost {
+  opacity: 0;
+  z-index: -100;
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cancel_ghost {
+  opacity: 1;
+  z-index: 1;
+  display: block;
+  position: inherit;
 }
