@@ -12,9 +12,6 @@ function animationOnExit() {
 
     document.getElementById(moduleName).className = 'container animationOnStart';
     const openingElement = document.querySelector('#' + moduleName + '.animationOnExit');
-    openingElement.addEventListener('animationend', () => {
-      openingElement.className += ' cancel_ghost';
-    });
   });
 }
 

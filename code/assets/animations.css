@@ -1,3 +1,13 @@
+@animationSlideUp {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -46,6 +56,10 @@
   animation-fill-mode: forwards;
 }
 
+.animationButtonSlide {
+  animation-name: animationSlideUp;
+  animation-duration: 1s;
+}
 
 .ghost {
   opacity: 0;
