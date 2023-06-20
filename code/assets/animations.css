@@ -1,13 +1,3 @@
-@animationSlideUp {
-  from {
-    transform: translateX(-200px);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -24,14 +14,14 @@
 
 @keyframes slideInLeft {
   from {
-    z-index: 1;
     opacity: 1;
+    z-index: 1;
     transform: translateX(0);
   }
 
   to {
-    z-index: -1;
     opacity: 0;
+    z-index: -1;
     transform: translateX(-200px);
   }
 }
@@ -56,10 +46,6 @@
   animation-fill-mode: forwards;
 }
 
-.animationButtonSlide {
-  animation-name: animationSlideUp;
-  animation-duration: 1s;
-}
 
 .ghost {
   opacity: 0;
@@ -69,11 +55,4 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.cancel_ghost {
-  opacity: 1;
-  z-index: 1;
-  display: block;
-  position: inherit;
 }
