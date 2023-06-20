@@ -170,6 +170,7 @@ body {
   width: 100%;
   max-width: 735px;
 
+  border: 2px solid #D0D0D0;
 }
 
 .tutorial_header {
@@ -201,15 +202,16 @@ body {
 }
 
 .tutorial_uptitle img {
-  width: 50px;
+  width: 58px;
+  height: 45px;
 }
 
 .tutorial_body {
-  padding: 20px;
   background-color: white;
 }
 
-.tutorial_section1 {
+.tutorial_section {
+  padding: 20px;
   display: flex;
   align-items: center;
 }
@@ -221,6 +223,11 @@ body {
 .tutorial_text {
   text-align: center;
   margin-left: 10px;
+}
+
+.tutorial_text2 {
+  margin-right: 40px;
+  margin-left: 156px;
 }
 
 /* arrows */

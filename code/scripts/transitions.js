@@ -32,6 +32,15 @@ function animationOnExit() {
   });
 }
 
+function stopVideo() {
+  document.getElementById("nubexDiv").className += ' animationDisappearToBack';
+
+  const exitingElement = document.querySelector("#nubexDiv");
+  exitingElement.addEventListener('animationend', () => {
+    exitingElement.className += " ghost";
+  });
+}
+
 function updateModuleVars() {
   moduleNumber += 1;
   moduleName = "module" + moduleNumber;

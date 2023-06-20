@@ -10,7 +10,7 @@ idea logic:
     6. when hovering over any arrow button it should increase in size (transform: scale())
 
 implementation logic:
-    1. all arrows have style 'hidden' for invisibility and non-interactibility
+    1. all arrows have style 'hidden' for invisibility and non-interactivity
 */
 
 

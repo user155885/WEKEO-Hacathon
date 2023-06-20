@@ -26,6 +26,20 @@
   }
 }
 
+@keyframes slideBack {
+  from {
+    opacity: 1;
+    z-index: 1;
+    transform: matrix3d(0);
+  }
+
+  to {
+    opacity: 0;
+    z-index: -1;
+    transform: matrix3d(-50);
+  }
+}
+
 .animationOnFirst {
   animation-name: slideInRight;
   animation-duration: 2s;
@@ -42,6 +56,12 @@
 
 .animationOnExit {
   animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animationDisappearToBack {
+  animation-name: slideBack;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
