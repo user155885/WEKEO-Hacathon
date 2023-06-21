@@ -1,6 +1,12 @@
 # Educational-Ecology-Course-for-Children
-https://drive.google.com/file/d/1L_KMSx0Ze6Q2d_ol9TVe-vrtYAW6DaWi/view?usp=sharing видео для фона
-https://drive.google.com/file/d/1o3RWQ3RerUWPnZuTXHpQiTLOoiCjz1Xl/view?usp=sharing основное видео
+https://youtu.be/61Lf_X77VAY    wekeo video
+https://youtu.be/_0B_KpGdaiE    background video
 
-https://drive.google.com/drive/folders/1v1gLLYWP6ZxMsIQ-Ldn1Ac-0NxcLXZpy?usp=sharing папка с кодом
+Задачи:
 
+Даша: 
+1. Сделать презентацию
+2. Сделать видео 
+
+Абу:
+1. Доработать код (навигационная панель, убрать Intro)
