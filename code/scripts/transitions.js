@@ -34,6 +34,7 @@ function animationOnExit() {
 
 function stopVideo() {
   document.getElementById("nubexDiv").className += ' animationDisappearToBack';
+  document.querySelector(".bg-dark").className += ' animationDisappearToBack';
 
   const exitingElement = document.querySelector("#nubexDiv");
   exitingElement.addEventListener('animationend', () => {

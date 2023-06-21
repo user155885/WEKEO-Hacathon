@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/recycle-symbol_121942.png" type="image/png">
-    <script defer src="scripts\transitions.js"></script>
-    <script src="scripts\module.js"></script>
-    <script defer src="scripts\transitions.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script defer src="scripts\transitions.js"></script>
+    <script defer src="scripts\accordionFeature.js"></script>
     <style>
       .overlay {width: 100%; height:100vh;}
       #nubexDiv {
@@ -28,6 +29,15 @@
         width: 100%; height: 100vh;
         object-fit: cover;
       }
+      .bg-dark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.14;
+      }
       </style>
   </head>
 
@@ -38,14 +48,17 @@
          <source src="nubex.webm" type="video/webm"></source>
       </video>
     </div>
-    <div class="sectiondiv">
-      <div class="container animationOnFirst" id = "module1">
+    <div class="bg-dark"></div>
+
+
+    <div class="sectiondiv sectiondiv-aligner">
+      <div class="container animationOnFirst" id = "section1">
         <div class="container_aligner">
           <div class="container_inner">
             <div class="container_title">
               <h1>
                 Are you interested in
-                <span style="color:#4BAF47"> Ecology </span>
+                <span style="color:#3E933B;"> Ecology </span>
                 ?
               </h1>
             </div>
@@ -75,113 +88,72 @@
             <div class="container_bottom">
               <div class="container_button">
                 <p class = "bottom_title">Join us to learn more about ecology!</p>
-                <button onclick="animationOnExit()" class="button">
-                  Join
-                </button>
+                <a href="#section2">
+                  <button class="button">
+                    Join
+                  </button>
+                </a>
               </div>
             </div>
 
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container ghost" id = "module2">
-        <div class="container_aligner">
-          <div class="container_inner">
-            <div class="grid">
-              <div class="grid_title">
-                <span>Introduction</span>
-                <span class = "hidden"></span>
-              </div>
-              <div class="grid_text">
-                <span>
-                  Our course is divided into five modules which covers the most important spheres of ecology.<br>
-                  These modules will introduce you to the ways you can help your country. <br>
-                  We will learn how you can take care of animals, rescue a local area from clogging and save energy resources. <br>
-                  Let's get down to the first module!
-                </span>
-              </div>
-            </div>
-            <div class="container_button">
-              <button onclick="animationOnExit(), stopVideo()" class="grid_button">
-                Begin with the first module
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container ghost" id = "module3">
-        <div class="container_aligner">
-          <div class="container_inner">
-            <div class="container_video">
-              <video width="320" height="240">
-                <source src="assets/imgs/wekeo2.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="container_button">
-                <button onclick="animationOnExit()" class="button">
-                  Next
-                </button>
-              </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="container container_selfaligner ghost" id = "module4">
-        <div class="container_aligner">
-          <div class="container_inner">
-            <div class="tutorial_box">
-              <div class="tutorial_header">
-                <div class="tutorial_title">
-                  <div class = "tutorial_uptitle">
-                    Let's make
-                    <img src="assets\imgs\scissors.png" alt="">
-                  </div>
-                  flower vases
+    <div class="sectiondiv second-bg">
+      <div class="container" id = "section2">
+        <div class="container_inner">
+          <div class="navigation_body">
+            <div class="navigation_content">
+              <div class="navigation_column">
+                <label for="first" class="navigation_object">
+                  <span>Module 1 - Waste and utilization</span>
+                  <span style="font-size: 37px;" class="material-symbols-outlined">expand_more</span>
+                </label>
+                <input type="radio" name="accordion" id="first">
+                <div class="module_description">
+                  <p>Some important text here explaining briefly the material of the module.</p>
                 </div>
-                <div></div>
+                <label for="second" class="navigation_object">
+                  <span>Module 1 - Waste and utilization</span>
+                  <span style="font-size: 37px;" class="material-symbols-outlined">expand_more</span>
+                </label>
+                <input type="radio" name="accordion" id="second">
+                <div class="module_description">
+                  <p>Some important text here explaining briefly the material of the module.</p>
+                </div>
+                <label for="third" class="navigation_object">
+                  <span>Module 1 - Waste and utilization</span>
+                  <span style="font-size: 37px;" class="material-symbols-outlined">expand_more</span>
+                </label>
+                <input type="radio" name="accordion" id="third">
+                <div class="module_description">
+                  <p>Some important text here explaining briefly the material of the module.</p>
+                </div>
               </div>
-              <div class="tutorial_body">
-                <div class="tutorial_section">
-                  <div class="tutorial_imgsection">
-                    <img src="assets\imgs\tutorial-1.jpeg" alt="">
-                  </div>
-                  <div class="tutorial_text">
-                    1. Cut off the top of the bottle and work with the bottom. <br>
-                    2. Glue the decoupage napkin of the bottom of the bottle.
-                  </div>
+              <div class="navigation_column">
+                <label for="fifth" class="navigation_object">
+                  <span>Module 1 - Waste and utilization</span>
+                  <span style="font-size: 37px;" class="material-symbols-outlined">expand_more</span>
+                </label>
+                <input type="radio" name="accordion" id="fifth">
+                <div class="module_description">
+                  <p>Some important text here explaining briefly the material of the module.</p>
                 </div>
-                <div class="tutorial_section">
-                  <div class="tutorial_text2">
-                    3. Use a hole punch to make two holes for the rope in the upper part opposite each other. <br>
-                    4. Tie the rope
-                  </div>
-                </div>
-                <div class="tutorial_section">
-                  <div class="tutorial_imgsection">
-                    <img src="assets\imgs\tutorial-2.jpeg" alt="">
-                  </div>
-                  <div class="tutorial_text">
-                    5. Glue the ribbon to the top edge of the vase using an adhesive gun.
-                  </div>
+                <label for="sixth" class="navigation_object">
+                  <span>Module 1 - Waste and utilization</span>
+                  <span style="font-size: 37px;" class="material-symbols-outlined">expand_more</span>
+                </label>
+                <input type="radio" name="accordion" id="sixth">
+                <div class="module_description">
+                  <p>Some important text here explaining briefly the material of the module.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="arrow_container">
-        <div class="arrow hidden">
-          <img src="assets\imgs\scroll_left.png" alt="">
-        </div>
-
-        <div class="arrow hidden">
-          <img src="assets\imgs\scroll_right.png" alt="">
-        </div>
-      </div>
-
     </div>
   </body>
 </html>
