@@ -16,7 +16,7 @@
 //   });
 // }
 let moduleNumber = 1;
-let moduleName = "module" + moduleNumber;
+let moduleName = "slide" + moduleNumber;
 
 function animationOnExit() {
   document.getElementById(moduleName).className = 'container animationOnExit';
@@ -44,6 +44,6 @@ function stopVideo() {
 
 function updateModuleVars() {
   moduleNumber += 1;
-  moduleName = "module" + moduleNumber;
+  moduleName = "slide" + moduleNumber;
   console.log(moduleName);
 }
