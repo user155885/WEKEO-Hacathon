@@ -8,10 +8,10 @@ radioButtons.forEach(function(radioButton) {
     console.log("is checked: " + radioBtn.checked);
 
     if (radioBtn.checked) {
-      radioBtn.checked = false;
+      document.getElementById(this.getAttribute('for')).checked = false;
       console.log("unchecked the radio button");
     } else {
-      radioBtn.checked = true;
+      document.getElementById(this.getAttribute('for')).checked = true;
       console.log("checked the radio button");
     }
   });

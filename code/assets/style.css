@@ -202,6 +202,14 @@ body {
 }
 
 /* navigation panel */
+.navigation {
+  transition: 0.2s;
+}
+
+.navigation:hover {
+  transform: scale(1.05);
+}
+
 .navigation_body {
   padding: 40px;
 
@@ -233,19 +241,10 @@ body {
 
   background-color: #4BAF47;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 
   transition: .2s;
   cursor: pointer;
-}
-
-.navigation_object:hover {
-  transform: scale(1.05);
-}
-
-.navigation_column input[type="radio"] {
-  display: none;
-
 }
 
 .module_description {
@@ -253,13 +252,30 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
+
+  border: 1px solid #4BAF47;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
 }
 
-.navigation_column input[type="radio"]:checked + .module_description {
-  max-height: 100px;
+.navigation_column input[type="checkbox"] {
+  display: none;
 }
 
-.navigation_object
+.navigation_column input[type="checkbox"]:checked + .module_description {
+  max-height: 300px;
+}
+
+.description_title {
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #4BAF47;
+}
+
+.description_mainbody {
+  padding: 10px;
+  font-size: 15px;
+}
 
 /* tutorial box */
 .tutorial_box {
