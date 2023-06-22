@@ -12,17 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/recycle-symbol_121942.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <script defer src="scripts\transitions.js"></script>
   </head>
 
   <body>
     <div class="sectiondiv second-bg">
-      <div class="container animationOnFirst" id = "slide1">
+      <div class="slide animationOnFirst" id = "slide1">
         <div class="container_centrelizer">
-          <div class="course_aligner">
+          <div class="lyrics_aligner">
             <div class="lyrics_box">
-              <div class="text_container">
+              <div class="lyrics">
                 <p class="paragraph">
                   Before the appearance of cities, waste was an environmentally friendly material, quickly rotted, and did not harm the environment.
                   However, with the development of cities, it became clear that countless packages of synthetic materials cannot decompose quickly.
@@ -68,9 +69,10 @@
                 </p>
               </div>
             </div>
-
-            <div class="course_box">
-              <div class="container_video">
+          </div>
+          <div class="course_box">
+            <div class="course_aligner">
+              <div class="course_video">
                 <video controls src="assets/vids/wekeo2.mp4" type="video/mp4"></video>
               </div>
               <div class="container_button">
@@ -81,7 +83,7 @@
         </div>
       </div>
 
-      <div class="container container_selfaligner ghost" id = "slide2">
+      <div class="slide ghost" id = "slide2">
         <div class="container_aligner">
           <div class="container_inner">
             <div class="tutorial_box">
@@ -136,28 +138,149 @@
       </div>
     </div>
 
-    <div class="course_pathway">
-      <div class="course_name">
-        <p>Waste and Utilization</p>
+    <div class="course_roadmap">
+      <div class="roadmap_title">
+        <p>Course Roadmap</p>
       </div>
 
-      <div class="course_steps">
-        <ul>
-          <li>
-            <span class="material-symbols-outlined">radio_button_unchecked</span>
-            Watch the video - Clean Up The Country
-          </li>
-          <li>
-            <span class="material-symbols-outlined">radio_button_unchecked</span>
-            Learn how to make plastic vases
-          </li>
-          <li><span class="material-symbols-outlined">radio_button_unchecked</span>
-            Answer questions for module
-          </li>
-          <li><span class="material-symbols-outlined">radio_button_unchecked</span>
-            Get the certificate!
-          </li>
-        </ul>
+      <div class="course">
+        <div class="course_name">
+          <p>1: Waste and Utilization</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Watch the video - Clean Up The Country</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div onclick="animationOnExit()" class="course_step">
+            <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Learn how to make plastic vases</p>
+            <span class = "step_duration">5m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Answer the questions after module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <spanc class="course_status">Not Received</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="course_name">
+          <p>2: Waste and Utilization</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Watch the video - Clean Up The Country</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Learn how to make plastic vases</p>
+            <span class = "step_duration">6m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Answer the questions after module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <spanc class="course_status">Not Received</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="course_name">
+          <p>3: Waste and Utilization</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Watch the video - Clean Up The Country</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Learn how to make plastic vases</p>
+            <span class = "step_duration">6m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Answer the questions after module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <spanc class="course_status">Not Received</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="course_name">
+          <p>4: Waste and Utilization</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Watch the video - Clean Up The Country</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Learn how to make plastic vases</p>
+            <span class = "step_duration">6m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Answer the questions after module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <spanc class="course_status">Not Received</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="course_name">
+          <p>5: Waste and Utilization</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Watch the video - Clean Up The Country</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Learn how to make plastic vases</p>
+            <span class = "step_duration">5m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Answer the questions after module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <spanc class="course_status">Not Received</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
