@@ -4,6 +4,10 @@
   padding-right: 385px;
 }
 
+.slide_inner {
+  width: 100%;
+}
+
 /* video and paragraph */
 .course_video video {
   width: 740px;
@@ -101,6 +105,10 @@
   background-color: #EDEDED;
 }
 
+.selected_step {
+  background-color: #EDEDED;
+}
+
 .course_step p {
   max-width: 235px;
 }
@@ -128,6 +136,37 @@
 
 .checkbox-icon {
   margin-right: 10px;
+}
+
+/* test box */
+.test_box {
+  max-width: 90%;
+}
+
+.test_title {
+  text-transform: none;
+  margin: 30px 0;
+}
+
+.questions_box {
+  padding-top: 20px;
+}
+
+.test_question {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.answer_box {
+  padding-left: 20px;
+}
+
+.answer_node {
+  padding: 5px 10px;
+}
+
+.answer_node input[type="radio"] {
+  display: none;
 }
 
 /* Scrollbar styles */

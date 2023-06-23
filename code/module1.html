@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-    <script defer src="scripts\transitions.js"></script>
+    <script src="scripts\CourseStep.js"></script>
   </head>
 
   <body>
     <div class="sectiondiv second-bg">
-      <div class="slide animationOnFirst" id = "slide1">
+      <div class="slide animationOnFirst" id="slide1">
         <div class="container_centrelizer">
           <div class="lyrics_aligner">
             <div class="lyrics_box">
@@ -75,15 +75,11 @@
               <div class="course_video">
                 <video controls src="assets/vids/wekeo2.mp4" type="video/mp4"></video>
               </div>
-              <div class="container_button">
-                <button onclick="animationOnExit()" class="button">Next</button>
-              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="slide ghost" id = "slide2">
+      <div class="slide ghost" id="slide2">
         <div class="container_aligner">
           <div class="container_inner">
             <div class="tutorial_box">
@@ -126,15 +122,39 @@
           </div>
         </div>
       </div>
-
-      <div class="arrow_container">
-        <div class="arrow hidden">
-          <img src="assets\imgs\scroll_left.png" alt="">
+      <div class="slide ghost" id="slide3">
+        <div class="slide_inner">
+          <div class="test_box">
+            <div class="tutorial_header">
+              <div class="tutorial_title test_title">
+                <p>Let's check what you've learnt from this lesson!</p>
+              </div>
+              <div></div>
+            </div>
+            <div class="questions_box">
+              <div class="test_question">
+                Why does Kazakhstan recycle only five percent of waste?
+              </div>
+              <div class="answer_box">
+                <div class="answer_node">
+                  <input type="radio" id="answer1" name="question1">
+                  <label for="answer1">Because the waste processing plants do not have enough raw materials for processing.</label>
+                </div>
+                <div class="answer_node">
+                  <input type="radio" id="answer2" name="question1">
+                  <label for="answer2">Because of the lack of funding.</label>
+                </div>
+                <div class="answer_node">
+                  <input type="radio" id="answer3" name="question1">
+                  <label for="answer3">No need to recycle since the amount of waste is not significant.</label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="slide ghost" id="slide4">
 
-        <div class="arrow hidden">
-          <img src="assets\imgs\scroll_right.png" alt="">
-        </div>
       </div>
     </div>
 
@@ -145,35 +165,63 @@
 
       <div class="course">
         <div class="course_name">
-          <p>1: Waste and Utilization</p>
+          <p>Module 1: Waste and Utilization</p>
         </div>
         <div class="course_steps">
-          <div class="course_step">
+          <div class="course_step selected_step" onclick="updateCourse(1, this)">
             <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Watch the video - Clean Up The Country</p>
             <span class = "step_duration">3m</span>
           </div>
-          <div onclick="animationOnExit()" class="course_step">
+          <div class="course_step" onclick="updateCourse(2, this)">
             <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Learn how to make plastic vases</p>
             <span class = "step_duration">5m</span>
           </div>
-          <div class="course_step">
+          <div class="course_step" onclick="updateCourse(3, this)">
             <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Answer the questions after module</p>
             <span class = "step_duration">4m</span>
           </div>
-          <div class="course_step">
+          <div class="course_step" onclick="updateCourse(4, this)">
             <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Get the certificate!</p>
-            <spanc class="course_status">Not Received</span>
+            <span class="course_status">Not Received</span>
           </div>
         </div>
       </div>
 
       <div class="course">
         <div class="course_name">
-          <p>2: Waste and Utilization</p>
+          <p>Module 2: Some other name</p>
+        </div>
+        <div class="course_steps">
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Some other description</p>
+            <span class = "step_duration">3m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Step two of second module</p>
+            <span class = "step_duration">6m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Maybe there will be five steps in this module</p>
+            <span class = "step_duration">4m</span>
+          </div>
+          <div class="course_step">
+            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
+            <p>Get the certificate!</p>
+            <span class="course_status">Not Received</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="course_name">
+          <p>Module 3: Waste and Utilization</p>
         </div>
         <div class="course_steps">
           <div class="course_step">
@@ -194,14 +242,14 @@
           <div class="course_step">
             <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Get the certificate!</p>
-            <spanc class="course_status">Not Received</span>
+            <span class="course_status">Not Received</span>
           </div>
         </div>
       </div>
 
       <div class="course">
         <div class="course_name">
-          <p>3: Waste and Utilization</p>
+          <p>Module 4: Waste and Utilization</p>
         </div>
         <div class="course_steps">
           <div class="course_step">
@@ -222,42 +270,14 @@
           <div class="course_step">
             <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Get the certificate!</p>
-            <spanc class="course_status">Not Received</span>
+            <span class="course_status">Not Received</span>
           </div>
         </div>
       </div>
 
       <div class="course">
         <div class="course_name">
-          <p>4: Waste and Utilization</p>
-        </div>
-        <div class="course_steps">
-          <div class="course_step">
-            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
-            <p>Watch the video - Clean Up The Country</p>
-            <span class = "step_duration">3m</span>
-          </div>
-          <div class="course_step">
-            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
-            <p>Learn how to make plastic vases</p>
-            <span class = "step_duration">6m</span>
-          </div>
-          <div class="course_step">
-            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
-            <p>Answer the questions after module</p>
-            <span class = "step_duration">4m</span>
-          </div>
-          <div class="course_step">
-            <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
-            <p>Get the certificate!</p>
-            <spanc class="course_status">Not Received</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="course_name">
-          <p>5: Waste and Utilization</p>
+          <p>Module 5: Waste and Utilization</p>
         </div>
         <div class="course_steps">
           <div class="course_step">
@@ -278,7 +298,7 @@
           <div class="course_step">
             <span style="font-size: 18px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
             <p>Get the certificate!</p>
-            <spanc class="course_status">Not Received</span>
+            <span class="course_status">Not Received</span>
           </div>
         </div>
       </div>

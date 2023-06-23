@@ -300,6 +300,10 @@ body {
   align-items: center;
 }
 
+.tutorial_body {
+  overflow: auto;
+}
+
 .tutorial_title {
   font-family: 'Caveat', cursive;
   text-transform: uppercase;
@@ -346,24 +350,6 @@ body {
 .tutorial_text2 {
   margin-right: 40px;
   margin-left: 156px;
-}
-
-/* arrows */
-.arrow_container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-  padding: 0 28px;
-}
-
-.arrow img {
-  width: 80px;
-  height: 75px;
 }
 
 /* button */
