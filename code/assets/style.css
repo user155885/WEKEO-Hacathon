@@ -81,6 +81,9 @@ body {
 }
 
 .container_centrelizer {
+  width: 100%;
+  height: 100vh;
+
   display: flex;
   align-items: center;
 }
@@ -283,7 +286,7 @@ body {
   width: 100%;
   max-width: 735px;
 
-  border: 2px solid #D0D0D0;
+  border: 1px solid #4BAF47;
 
   background-image: url(../assets/imgs/tutorial-background.png);
   background-repeat: no-repeat;

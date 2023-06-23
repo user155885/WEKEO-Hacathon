@@ -16,10 +16,10 @@
 //   });
 // }
 let moduleNumber = 1;
-let moduleName = "module" + moduleNumber;
+let moduleName = "slide" + moduleNumber;
 
 function animationOnExit() {
-  document.getElementById(moduleName).className = 'container animationOnExit';
+  document.getElementById(moduleName).className = 'slide animationOnExit';
   const exitingElement = document.querySelector('#' + moduleName + '.animationOnExit');
 
   exitingElement.addEventListener('animationend', () => {
@@ -44,6 +44,6 @@ function stopVideo() {
 
 function updateModuleVars() {
   moduleNumber += 1;
-  moduleName = "module" + moduleNumber;
+  moduleName = "slide" + moduleNumber;
   console.log(moduleName);
 }
