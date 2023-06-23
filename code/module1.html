@@ -18,38 +18,40 @@
   </head>
 
   <body>
-    <ul class="nav nav-module">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Modules</a>
+    <div class="super_aligner">
+      <ul class="nav nav-module">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
         
-        <ul class="subnav">
-          <li class="subnav-item">
-            <a class="subnav-link" href="module1.html">Clean up the country</a>
-          </li>
-          <li class="subnav-item">
-            <a class="subnav-link" href="#">What is the Population Ecology?</a>
-          </li>
-          <li class="subnav-item">
-            <a class="subnav-link" href="#">My Green Planet</a>
-          </li>
-          <li class="subnav-item">
-            <a class="subnav-link" href="#">How much water do we really need?</a>
-          </li>
-          <li class="subnav-item">
-            <a class="subnav-link" href="#">A future based on renewable energy</a>
-          </li>
-        </ul>
-      </li>
-      
-    </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Modules</a>
+          
+          <ul class="subnav">
+            <li class="subnav-item">
+              <a class="subnav-link" href="module1.html">Clean up the country</a>
+            </li>
+            <li class="subnav-item">
+              <a class="subnav-link" href="#">What is the Population Ecology?</a>
+            </li>
+            <li class="subnav-item">
+              <a class="subnav-link" href="#">My Green Planet</a>
+            </li>
+            <li class="subnav-item">
+              <a class="subnav-link" href="#">How much water do we really need?</a>
+            </li>
+            <li class="subnav-item">
+              <a class="subnav-link" href="#">A future based on renewable energy</a>
+            </li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
     
     <div class="sectiondiv second-bg">
       <div class="slide animationOnFirst" id="slide1">
@@ -158,7 +160,7 @@
       <div class="slide ghost" id="slide3">
         <div class="slide_inner">
           <div class="test_box">
-            <div class="tutorial_header">
+            <div class="tutorial_header test_header">
               <div class="tutorial_title test_title">
                 <p>Let's check what you've learnt from this lesson!</p>
               </div>
@@ -189,16 +191,35 @@
               </div>
               <div class="answer_box">
                 <div class="answer_node">
-                  <input type="radio" id="answer1" name="question1">
-                  <label for="answer1">Because the waste processing plants do not have enough raw materials for processing.</label>
+                  <input type="radio" id="answer4" name="question2">
+                  <label for="answer4">10-15 years</label>
                 </div>
                 <div class="answer_node">
-                  <input type="radio" id="answer2" name="question1">
-                  <label for="answer2">Because of the lack of funding.</label>
+                  <input type="radio" id="answer5" name="question2">
+                  <label for="answer5">500-1 million years</label>
                 </div>
                 <div class="answer_node">
-                  <input type="radio" id="answer3" name="question1">
-                  <label for="answer3">No need to recycle since the amount of waste is not significant.</label>
+                  <input type="radio" id="answer6" name="question2">
+                  <label for="answer6">20 - 500 years</label>
+                </div>
+              </div>
+            </div>
+            <div class="questions_box">
+              <div class="test_question">
+                Is it possible to throw light bulbs and broken glass into glass conteiners?
+              </div>
+              <div class="answer_box">
+                <div class="answer_node">
+                  <input type="radio" id="answer7" name="question3">
+                  <label for="answer4">Yes, it is possible</label>
+                </div>
+                <div class="answer_node">
+                  <input type="radio" id="answer8" name="question3">
+                  <label for="answer5">No, it is not possible</label>
+                </div>
+                <div class="answer_node">
+                  <input type="radio" id="answer9" name="question3">
+                  <label for="answer6">Yes, it is possible, however broken glass should not be sharp</label>
                 </div>
               </div>
             </div>
@@ -216,12 +237,12 @@
   
         <div class="course">
           <div class="course_name">
-            <p>Module 1: Waste and Utilization</p>
+            <p>Module 1: Clean up the country</p>
           </div>
           <div class="course_steps">
             <div class="course_step selected_step" onclick="updateCourse(1, this)">
               <span style="font-size: 17px;" class="material-symbols-outlined checkbox-icon">radio_button_unchecked</span>
-              <p>Watch the video - Clean Up The Country</p>
+              <p>Watch the video</p>
               <span class = "step_duration">3m</span>
             </div>
             <div class="course_step" onclick="updateCourse(2, this)">

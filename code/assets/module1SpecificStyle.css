@@ -105,6 +105,7 @@
 
 .course_step {
   padding: 14px 20px 14px 16px;
+  min-height: 60px;
 
   position: relative;
   display: flex;
@@ -152,13 +153,14 @@
 }
 
 /* test box */
-.test_box {
-  max-width: 90%;
-}
 
 .test_title {
   text-transform: none;
   margin: 30px 0;
+}
+
+.test_header {
+  max-height: 72px;
 }
 
 .questions_box {
@@ -168,7 +170,7 @@
 .test_question {
   padding: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .answer_box {
@@ -177,7 +179,7 @@
 
 .answer_node {
   padding: 5px 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 /* Scrollbar styles */
