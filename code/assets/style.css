@@ -336,6 +336,10 @@ body {
   z-index: 200;
 }
 
+.nav-module {
+  background-color: #FCECA0;
+}
+
 .nav-item {
   position: relative;
   padding-left: 100px;

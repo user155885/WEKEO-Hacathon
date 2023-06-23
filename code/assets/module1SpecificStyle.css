@@ -1,7 +1,8 @@
 /* slide */
 .slide {
   width: 100%;
-  padding-right: 385px;
+  padding-right: 350px;
+  position: relative;
 }
 
 .slide_inner {
@@ -9,8 +10,16 @@
 }
 
 /* video and paragraph */
-.course_video video {
+.video_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 320px;
+}
+
+.course_video iframe {
   width: 740px;
+  height: 425px;
 }
 
 .course_video {
@@ -30,17 +39,18 @@
 }
 
 .lyrics_box {
-  border-radius: 10px;
-  max-width: 320px;
   background-color: #FCECA0;
-  max-height: 600px;
+  max-width: 320px;
+  max-height: 100vh;
   overflow: auto;
   padding: 20px;
   padding-bottom: 0;
 }
 
 .lyrics_aligner {
-  position: fixed;
+  position: absolute;
+  top:0;
+  left:0;
 }
 
 .lyrics {
@@ -53,13 +63,14 @@
 
 /* course pathway */
 .course_roadmap {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
+  z-index: 10;
 
   height: 100vh;
   width: 100%;
-  max-width: 385px;
+  max-width: 350px;
 
   background-color: white;
   border: 1px solid #449E40;
