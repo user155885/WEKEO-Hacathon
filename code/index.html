@@ -12,9 +12,10 @@
     <link rel="shortcut icon" href="assets/imgs/recycle-symbol_121942.png" type="image/png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+    
     <script defer src="scripts\transitions.js"></script>
     <script defer src="scripts\accordionFeature.js"></script>
+    
     <style>
       .overlay {width: 100%; height:100vh;}
       #nubexDiv {
@@ -44,12 +45,46 @@
   <body>
     <div id="nubexDiv" class="overlay">
       <video id="nubexVideo" autoplay muted loop>
-         <source src="assets\vids\Kazakh.mp4" type="video/mp4"></source>
+         <source src="/Users/saprykinadara/Desktop/WEKEO-Hacathon/code/assets/vids/Kazakh (1) (1).mp4" type="video/mp4"></source>
          <source src="nubex.webm" type="video/webm"></source>
       </video>
     </div>
     <div class="bg-dark"></div>
+    
+    
+    
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="#">Modules</a>
+        
+        <ul class="subnav">
+          <li class="subnav-item">
+            <a class="subnav-link" href="#">Clean up the country</a>
+          </li>
+          <li class="subnav-item">
+            <a class="subnav-link" href="#">What is the Population Ecology?</a>
+          </li>
+          <li class="subnav-item">
+            <a class="subnav-link" href="#">My Green Planet</a>
+          </li>
+          <li class="subnav-item">
+            <a class="subnav-link" href="#">How much water do we really need?</a>
+          </li>
+          <li class="subnav-item">
+            <a class="subnav-link" href="#">A future based on renewable energy</a>
+          </li>
+        </ul>
+      </li>
+      
+    </ul>
 
     <div class="sectiondiv sectiondiv-aligner">
       <div class="container animationOnFirst" id = "section1">
@@ -88,11 +123,6 @@
             <div class="container_bottom">
               <div class="container_button">
                 <p class = "bottom_title">Join us to learn more about ecology!</p>
-                <a href="#section2">
-                  <button class="button">
-                    Join
-                  </button>
-                </a>
               </div>
             </div>
 
@@ -188,5 +218,7 @@
         </div>
       </div>
     </div>
+  
+    
   </body>
 </html>

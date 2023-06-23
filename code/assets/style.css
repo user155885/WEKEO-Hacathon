@@ -98,7 +98,7 @@ body {
 .container_title {
   font-family: 'Caveat', cursive;
   font-size: 40px;
-
+  color: white;
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
@@ -144,6 +144,7 @@ body {
 }
 
 .content_text {
+  font-family: 'Montserrat', sans-serif;
   padding: 20px;
   width: 300px;
   height: 160px;
@@ -409,4 +410,83 @@ body {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Nav */
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.nav-item {
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #fff;
+}
+
+.nav-item:hover > .subnav {
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  
+  background-color: #fff;
+  
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+}
+
+
+/* Subnav */
+.subnav {
+  display: none;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  font-size: 14px;
+  width: 300px;
+  position: absolute;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.subnav-item {
+}
+
+.subnav-link {
+  display: block;
+  padding: 8px 16px;
+  
+  
+  background-color: #fff;
+  
+  color: #333;
+  text-decoration: none;
+}
+
+.subnav-link:hover {
+  background-color: #44a241ad;
 }
