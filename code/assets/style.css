@@ -305,7 +305,6 @@ body {
 }
 
 .button {
-  font-family: 'Caveat', cursive;
   font-size: 40px;
   color: white;
 
@@ -316,13 +315,13 @@ body {
   background-color: #4BAF47;
   border-radius: 20px;
 }
-
+/* 
 .button:hover {
   border: 1px solid #4BAF47;
   background-color: inherit;
   color: #4B9847;
   transition: 0.2s;
-}
+} */
 
 .button_link {
   width: 100%;

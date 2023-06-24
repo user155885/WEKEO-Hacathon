@@ -19,12 +19,12 @@
 }
 
 .course_video iframe {
-  width: 740px;
-  height: 425px;
+  width: 100%; 
+
 }
 
 .course_video {
-  width: 740px;
+  width: 85%;
 }
 
 .course_box {
@@ -81,8 +81,7 @@
   width: 100%;
   max-width: 350px;
 
-  background-color: #449E40;
-  border: 1px solid #FCECA0;
+  background-color: #4BAF47;
   font-family: 'Montserrat', sans-serif;
   overflow: auto;
 }
@@ -92,7 +91,7 @@
   font-size: 40px;
   color: #333;
 
-  padding: 20px;
+  padding: 18px;
   background-color: #FCECA0;
   font-family: 'Caveat', cursive;
 }
@@ -105,12 +104,12 @@
 .course_name {
   padding: 14px 12px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 17px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .course_steps {
-  font-size: 20px;
+  font-size: 17px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -131,10 +130,6 @@ p.c:hover {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 5px;
-}
-
-.selected_step {
-  
 }
 
 .course_step p {
@@ -159,7 +154,8 @@ p.c:hover {
   font-weight: bold;
   text-align: center;
 
-  background-color: #DDDDDD;
+  background-color: #fff;
+  color: black;
   border: 1px solid #B5B5B5;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
@@ -170,14 +166,13 @@ p.c:hover {
 }
 
 /* test box */
-
 .test_title {
   text-transform: none;
   margin: 30px 0;
 }
 
 .test_header {
-  max-height: 72px;
+  max-height: 100px;
 }
 
 .questions_box {
@@ -219,60 +214,6 @@ p.c:hover {
   border-radius: 10px;
 }
 
-
-.arrow-6 {
-  margin:20px;
-}
-.arrow-6 svg {
-  width: 100px;
-  height: auto;
-  margin: 0 2rem;
-  cursor: pointer;
-  overflow: visible;
-}
-.arrow-6 svg polygon, 
-.arrow-6 svg path {
-  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
-  fill: #449E40;
-}
-.arrow-6 svg:hover polygon, 
-.arrow-6 svg:hover path {
-  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
-  fill: #449E40;
-}
-.arrow-6 svg:hover .arrow-6-pl {
-  animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
-}
-.arrow-6 svg:hover .arrow-6-pl-fixed {
-  animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
-}
-
-@keyframes arrow-6-anim {
-  0% {
-      opacity: 1;
-      transform: translateX(0);
-  }
-  5% {
-      transform: translateX(-0.1rem);
-  }
-  100% {
-      transform: translateX(1rem);
-      opacity: 0;
-  }
-}
-@keyframes arrow-6-fixed-anim {
-  5% {
-      opacity: 0;
-  }
-  20% {
-      opacity: 0.4;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
-
 .wrapper
 {
    width: 100%;
@@ -295,9 +236,9 @@ p.c:hover {
  
 .quiz__head
 {
-   font-size: 20pt;
-   margin: 10px;
-   margin-bottom: 50px;
+  font-size: 20pt;
+  margin-top: 52px;
+  margin-bottom: 34px;
 }
  
 .head__content
@@ -325,27 +266,52 @@ p.c:hover {
  
 .button
 {
-   border: 0;
    border-radius: 10px;
-   background: #5EB97D;
-   color: #fff;
+   background: #4BAF47;
    padding: 10px 25px;
-   width: 70%;
-   font-size: 15pt;
+   width: 63%;
+   min-height: 65px;
+   font-size: 20px;   
    display: block;
-   margin: 2px auto;
+   margin: 0 auto;
    cursor: pointer;
    font-family: 'Montserrat', sans-serif;
 }
- 
-.button_wrong
-{
-   background: #5EB97D;
-   
+
+
+.button-noniteractable {
+  border: 1px solid #4BAF47;
+  border-radius: 10px;
+
+  width: 63%;
+  min-height: 65px;
+  padding: 10px 25px;
+  margin: 0 auto;
+  display: block;
+
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
 }
- 
-.button_correct
-{
-   background: #5EB97D;
+
+.button-hover:hover {
+  border: 1px solid #4BAF47;
+  background-color: inherit;
+  color: #4B9847;
+  transition: 0.2s;
 }
- 
+
+
+.selected_wrong {
+  background-color: red;
+}
+
+.selected_correct {
+  background-color: blue;
+}
+
+.cancel-hover:hover {
+  border: none;
+  background-color: inherit;
+  transition: 0;
+}
