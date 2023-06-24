@@ -14,7 +14,6 @@ body {
   font-weight: 500;
   line-height: 1.6;
   color: black;
-
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
@@ -341,14 +340,15 @@ body {
   list-style: none;
   justify-content: center;
   z-index: 200;
+  background-color: #fff;
 
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .nav-module {
-  background-color: #fff
+  background-color: #fff;
 }
 
 .nav-item {
@@ -419,4 +419,96 @@ body {
 
 .subnav-link:hover {
   background-color: #44a241ad;
+}
+
+
+
+
+/* Nav1 */
+.n-n-module {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  z-index: 200;
+  background-color: #4BAF47;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.n-module {
+  background-color: ;
+}
+
+.n-item {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #4BAF47;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.n-item:hover > .subnav {
+  display: block;
+}
+
+.n-link {
+  display: block;
+  padding: 8px 16px;
+  
+  background-color: #4BAF47;
+  
+  color: white;
+  text-decoration: none;
+}
+
+.n-link:hover {
+  font-weight: 700;
+  text-decoration: underline white 3px;
+  text-underline-offset: 5px;
+}
+
+.n-link:active {
+  font-weight: 700;
+  text-decoration: underline white 3px;
+  text-underline-offset: 5px;
+}
+
+
+/* Subnav */
+.subn {
+  display: none;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #4BAF47;
+  
+  font-size: 14px;
+  width: 300px;
+  position: absolute;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 300;
+}
+
+.subn-link {
+  display: block;
+  padding: 8px 16px;
+  
+  
+  background-color: #4BAF47;
+  
+  color: white;
+  text-decoration: none;
+}
+
+.subn-link:hover {
+  background-color: #4BAF47;
 }

@@ -28,8 +28,10 @@
 }
 
 .course_box {
+  margin-top: 35px;
   width: 100%;
   padding-left: 320px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .course_aligner {
@@ -37,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lyrics_box {
@@ -46,20 +49,24 @@
   overflow: auto;
   padding: 88px 20px 20px 20px;
   padding-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lyrics_aligner {
   position: absolute;
   top:0;
   left:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lyrics {
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .paragraph {
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* course pathway */
@@ -74,33 +81,37 @@
   width: 100%;
   max-width: 350px;
 
-  background-color: white;
-  border: 1px solid #449E40;
-
+  background-color: #449E40;
+  border: 1px solid #FCECA0;
+  font-family: 'Montserrat', sans-serif;
   overflow: auto;
 }
 
 .roadmap_title {
   text-align: center;
-  font-size: 20px;
-  color: white;
+  font-size: 40px;
+  color: #333;
 
   padding: 20px;
-  background-color: #449E40;
+  background-color: #FCECA0;
+  font-family: 'Caveat', cursive;
 }
 
 .course {
   padding: 16px 0;
+  color: white;
 }
 
 .course_name {
   padding: 14px 12px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .course_steps {
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .course_step {
@@ -113,24 +124,29 @@
 
   transition: .2s;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.course_step:hover {
-  background-color: #EDEDED;
+p.c:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .selected_step {
-  background-color: #EDEDED;
+  
 }
 
 .course_step p {
   max-width: 235px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .step_duration {
   position: absolute;
   right: 0;
   margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .course_status {
@@ -146,6 +162,7 @@
   background-color: #DDDDDD;
   border: 1px solid #B5B5B5;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .checkbox-icon {
@@ -165,21 +182,25 @@
 
 .questions_box {
   padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .test_question {
   padding: 20px;
   font-weight: bold;
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .answer_box {
   padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .answer_node {
   padding: 5px 10px;
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Scrollbar styles */
@@ -197,3 +218,134 @@
   background: #449E40;
   border-radius: 10px;
 }
+
+
+.arrow-6 {
+  margin:20px;
+}
+.arrow-6 svg {
+  width: 100px;
+  height: auto;
+  margin: 0 2rem;
+  cursor: pointer;
+  overflow: visible;
+}
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #449E40;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #449E40;
+}
+.arrow-6 svg:hover .arrow-6-pl {
+  animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+  animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+@keyframes arrow-6-anim {
+  0% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  5% {
+      transform: translateX(-0.1rem);
+  }
+  100% {
+      transform: translateX(1rem);
+      opacity: 0;
+  }
+}
+@keyframes arrow-6-fixed-anim {
+  5% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 0.4;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.wrapper
+{
+   width: 100%;
+   height: 100%;
+   display: table;
+}
+ 
+.main
+{
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+}
+ 
+.quiz-frame
+{
+   border: 0;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ 
+.quiz__head
+{
+   font-size: 20pt;
+   margin: 10px;
+   margin-bottom: 50px;
+}
+ 
+.head__content
+{
+   padding: 5px;
+}
+ 
+.quiz__body
+{
+   margin: 10px;
+}
+ 
+.quiz__footer
+{
+   position: absolute;
+   bottom: 0;
+   display: block;
+   width: 100%;
+}
+ 
+.footer__content
+{
+   padding: 5px;
+}
+ 
+.button
+{
+   border: 0;
+   border-radius: 10px;
+   background: #5EB97D;
+   color: #fff;
+   padding: 10px 25px;
+   width: 70%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+}
+ 
+.button_wrong
+{
+   background: #5EB97D;
+   
+}
+ 
+.button_correct
+{
+   background: #5EB97D;
+}
+ 
